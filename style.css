@@ -1,0 +1,158 @@
+body{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    background-color: #100729;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#carbonVal{
+    min-width: 20px;
+    color:#15063d;
+    font-weight: bold;
+}
+.control-slider{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+#btnGenerare{
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    color:#15063d;
+    margin-top: 5px;
+}
+
+#btnGenerare:hover{
+    background-color: #2ecc71;
+}
+
+.cutieComenzi{
+    background-color:#a975ee;
+    padding: 30px 20px;
+    border-radius: 12px;
+    max-width: 650px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(88, 69, 107, 0.7);
+}
+
+.cutieRez{
+    background-color:#8e5bd1;
+    padding: 30px 20px;
+    border-radius: 12px;
+    max-width: 650px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(88, 69, 107, 0.7);
+}
+
+.cutie-peptide{
+    color:#15063d
+}
+
+#text1{
+    margin-bottom: 5px;
+}
+
+.aminoacids-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #15063d;
+    font-weight: bold;
+    user-select: none;
+    transition: opacity 0.2s ease;
+}
+
+.checkbox-label:hover {
+    opacity: 0.8;
+}
+
+.checkbox-label input[type="checkbox"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #15063d;
+}
+
+.cutieAlegeri{
+    background-color:#8e5bd1;
+    padding: 30px 20px;
+    border-radius: 12px;
+    max-width: 650px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(88, 69, 107, 0.7);
+}
+#AlegeriText{
+    color:#15063d;
+    font-weight: bold;
+}
+
+#inputIndex{
+    padding: 6px; 
+    width: 80px; 
+    text-align: center; 
+    font-size: 14px;  
+    font-weight: bold;
+    border:none;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+#btnFormula{
+    padding: 6px 15px; 
+    margin-left: 10px; 
+    font-weight: bold; 
+    font-size: 14px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    border:none;
+    border-radius: 15px;
+    padding: 5px 10px; 
+    background-color: #ffffff; 
+    transition: background-color 0.3s ease;
+    color: #15063d;
+}
+#btnFormula:hover{
+    background-color: #2ecc71;
+}
+#container-explicatii{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.no-break {
+    white-space: nowrap;
+    white-space: nowrap;
+    display: inline;
+}
