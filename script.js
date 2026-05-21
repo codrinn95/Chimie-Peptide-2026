@@ -160,8 +160,14 @@ function GenForm(x){
             partiFormula.push("NH-"+structChim+"-CO");
         }
     }
-    const textFinal=partiFormula.join('-');
-    textEl.innerText=textFinal;
+   const textFinal = partiFormula.join('-');
+    
+    ///Căutăm toate cifrele (\d) global (g) și le punem <sub> copt </sub>
+    const formulaCuIndici = textFinal.replace(/(\d+)/g, '<sub>$1</sub>');
+    
+    // Folosim innerHTML ca browserul să recunoască tag-urile HTML create
+    textEl.innerHTML = formulaCuIndici;
+}
 }
 
 // initialize checkboxes when page loads
