@@ -62,7 +62,9 @@ function genereaza(){
     
     function back(curentC, anterioriC){ //anterioriC e un vector unde tinem minte ce C am pus deja in secventa
         if(curentC==nrC){
-            rezultate.push(anterioriC.join('-'));
+            if(anterioriC.length>=2){
+                rezultate.push(anterioriC.join('-')); //ca sa nu luam un aminoacid singur drept peptida
+            }
             return;
         }
         if(curentC>nrC)return;
@@ -160,14 +162,9 @@ function GenForm(x){
             partiFormula.push("NH-"+structChim+"-CO");
         }
     }
-   const textFinal = partiFormula.join('-');
-    
-    ///Căutăm toate cifrele (\d) global (g) și le punem <sub> copt </sub>
-    const formulaCuIndici = textFinal.replace(/(\d+)/g, '<sub>$1</sub>');
-    
-    // Folosim innerHTML ca browserul să recunoască tag-urile HTML create
-    textEl.innerHTML = formulaCuIndici;
-}
+    const textFinal=partiFormula.join('-');
+    const formulaCuIndici = textFinal.replace(/(\d+)/g, '<sub>$1</sub>'); //punem nr drept indici
+    textEl.innerHTML=formulaCuIndici;
 }
 
 // initialize checkboxes when page loads
